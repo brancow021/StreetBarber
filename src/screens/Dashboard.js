@@ -3,8 +3,8 @@ import React from 'react'
 
 export const Dashboard = () => {
    return (
-      <>
-        <Text>Dashboard</Text> 
+      <>   
+         <Text>Hola</Text>
       </>
    )
 }

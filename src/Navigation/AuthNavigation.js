@@ -9,7 +9,12 @@ const Tab = createBottomTabNavigator();
 export const AuthNavigation = () => {
   return (
     <>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          animationEnabled: true,
+          gestureEnabled: true,
+        }}
+        detachInactiveScreens>
         <Tab.Screen
           options={{
             title: 'Home',

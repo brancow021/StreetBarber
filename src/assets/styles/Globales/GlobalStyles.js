@@ -25,13 +25,21 @@ export const GlobalStyle = StyleSheet.create({
 		
 	},
 	itemInput:{
-		marginBottom: 20
+		marginBottom: 20,
 	},
 	FormLogin:{
 		justifyContent: 'center',
 		alignItems: 'center'
 	},
 	 button:{
-		 backgroundColor: '#2D1679'
+		 backgroundColor: '#2D1679',
+	 },
+	 ContentForm:{
+		borderWidth: 1,
+		height: 'auto',
+		width: '95%',
+		borderRadius: 4,
+		borderColor: '#ccc',
+		marginBottom: 60
 	 }
 });

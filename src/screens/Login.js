@@ -14,21 +14,19 @@ import React, {useState} from 'react';
 import {GlobalStyle} from '../assets/styles/Globales/GlobalStyles';
 import {loginStyles} from '../assets/styles/Locales/LoginStyles';
 
-export const Login = () => {
+export const Login = ({navigation}) => {
   const [visiblePassword, setvisiblePassword] = useState(false);
-  const [nameIconPassword, setnameIconPassword] = useState("eye-off-outline");
-
+  const [nameIconPassword, setnameIconPassword] = useState('eye-off-outline');
 
   const handlevisiblePassword = () => {
-    setvisiblePassword(!visiblePassword)
+    setvisiblePassword(!visiblePassword);
 
-
-    if(visiblePassword){
-      setnameIconPassword('eye-outline')
-    } else{
-      setnameIconPassword('eye-off-outline')
+    if (visiblePassword) {
+      setnameIconPassword('eye-outline');
+    } else {
+      setnameIconPassword('eye-off-outline');
     }
-  }
+  };
 
   return (
     <>
@@ -51,7 +49,7 @@ export const Login = () => {
               secureTextEntry={!visiblePassword}
               autoCompleteType="password"
               placeholder="Contraseña"
-              autoCorrect={!visiblePassword}         
+              autoCorrect={!visiblePassword}
             />
             <Icon
               onPress={() => handlevisiblePassword()}
@@ -67,7 +65,7 @@ export const Login = () => {
           </View>
 
           <View>
-            <Button style={GlobalStyle.blockButton}>
+            <Button onPress={() => navigation.navigate('dashboard')} style={GlobalStyle.blockButton}>
               <Text style={GlobalStyle.textButton}>Iniciar Sesíon</Text>
             </Button>
 

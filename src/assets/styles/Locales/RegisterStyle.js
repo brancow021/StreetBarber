@@ -9,6 +9,13 @@ export const registerStyles = StyleSheet.create({
 		borderRadius: 4,
 		justifyContent: 'center'
 	},
+	nextButtonDisabled:{
+		backgroundColor: '#DFDDDD',
+		width: 100,
+		height: 50,
+		borderRadius: 4,
+		justifyContent: 'center'
+	},
 	nextButtonText:{
 		color: 'white',
 		textAlign: 'center',

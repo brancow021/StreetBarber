@@ -1,16 +1,19 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {Navigation} from './src/Navigation/Navigation';
-import { UserStates } from './src/Contexts/states/UserStates';
+import {UserStates} from './src/Contexts/states/UserStates';
+import {Root} from 'native-base';
 
 const App = () => {
   return (
     <>
-      <UserStates>
-        <NavigationContainer>
-          <Navigation />
-        </NavigationContainer>
-      </UserStates>
+      <Root>
+        <UserStates>
+          <NavigationContainer>
+            <Navigation />
+          </NavigationContainer>
+        </UserStates>
+      </Root>
     </>
   );
 };
